@@ -6,6 +6,7 @@ import controllers.BookController;
 import models.Book;
 
 public class BookRegister {
+	
 	private static Book book;
 	private static Scanner sc = new Scanner(System.in);
 	

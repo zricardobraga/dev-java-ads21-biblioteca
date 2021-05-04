@@ -9,7 +9,7 @@ public class Book {
 	//contructo que gera o código do livro automáticamente
 	public Book () {
 		this.cod = Book.cont++;
-		setStatus("AVALIABLE"); 
+		setStatus("AVAILABLE"); 
 	}
 	
 	public int getCod() {

@@ -18,6 +18,16 @@ public class BookController {
 		return null;
 	}
 	
-//	public static Boolean 
+	public static Boolean register (Book book) {
+		if (findBookByCode(book.getCod()) == null) {
+			books.add(book);
+			return true;
+		}
+		return false;
+	}
+	
+	public static ArrayList<Book> showBooks(){
+		return books;
+	}  
 
 }

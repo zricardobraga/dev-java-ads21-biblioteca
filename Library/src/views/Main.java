@@ -1,37 +1,56 @@
 package views;
 
-import models.Book;
-import models.Borrowing;
-import models.Student;
+import java.util.Scanner;
 
 public class Main {
 	
 	public static void main(String[] args) {
 		
-		Book book1 = new Book();
-		System.out.println(book1.getCod());
-
-		book1.setTittle("X");
+		Scanner sc = new Scanner(System.in);
 		
-		System.out.println(book1.toString());
-		
-//		Book book2 = new Book(); 
-//		System.out.println(book2.getCod());
-//		
-//		Borrowing borrow = new Borrowing();
-//		
-//		System.out.println(borrow.getBorrowDate());
-//		System.out.println(borrow.getReturnDate());
-//		
-//		Student student = new Student();
-//		student.setName("Joe Doe");
-//		student.setCpf("123.456.789-10");
-//		student.setAddress("Rua Y, n 10, Bairro, Cidade/PR");
-//		
-//		System.out.println(student.toString());
-		
-//		StudentRegister.render();
-		
-	}
-
+		int opcao;
+		do {
+			System.out.println("\nLIBRARY\n");
+			System.out.println("1 - Book Register");
+			System.out.println("2 - List Books");
+			System.out.println("3 - Find Book by Id");
+			System.out.println("4 - Book Edit");
+			System.out.println("5 - Book Delete");
+			System.out.println("6 - Student Register");
+			System.out.println("7 - Borrowing Register");
+			System.out.println("8 - Borrowing Controller");
+			System.out.println("0 - Exit");
+			
+			System.out.print("\nDigite uma opção:");
+			opcao = sc.nextInt();
+			
+			switch(opcao) {
+				case 1:
+					BookRegister.render();
+					break;	
+				case 2:
+					ListBooks.Render();					
+					break;
+				case 3:
+					
+					break;
+				case 4:
+					
+					break;
+				case 5:
+					
+					break;
+				case 6:
+					StudentRegister.render();
+					break;
+				case 0:
+					System.out.println("Exit..");
+					break;
+				default:
+				}
+	} while(opcao != 0);
+	
+	sc.close();		
+}		
 }
+

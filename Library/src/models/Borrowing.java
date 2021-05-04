@@ -35,9 +35,9 @@ public class Borrowing {
 		return borrowDate;
 	}
 
-	public void setBorrowDate(LocalDate borrowDate) {
-		this.borrowDate = borrowDate;
-	}
+	//public void setBorrowDate(LocalDate borrowDate) {
+	//	this.borrowDate = borrowDate;
+	//}
 
 	public LocalDate getReturnDate() {
 		return returnDate;
