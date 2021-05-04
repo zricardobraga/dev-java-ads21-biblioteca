@@ -9,6 +9,7 @@ public class Book {
 	//contructo que gera o código do livro automáticamente
 	public Book () {
 		this.cod = Book.cont++;
+		setStatus("AVALIABLE"); 
 	}
 	
 	public int getCod() {
@@ -33,5 +34,10 @@ public class Book {
 	
 	public void setStatus(String status) {
 		this.status = status;
+	}
+	
+	@Override
+	public String toString() {
+		return "\nCod: " + getCod() + " | Tittle: " + getTittle() + " | Status: " + getStatus();
 	}
 }

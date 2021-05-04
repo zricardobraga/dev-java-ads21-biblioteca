@@ -8,9 +8,13 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-//		Book book1 = new Book();
-//		System.out.println(book1.getCod());
-//		
+		Book book1 = new Book();
+		System.out.println(book1.getCod());
+
+		book1.setTittle("X");
+		
+		System.out.println(book1.toString());
+		
 //		Book book2 = new Book(); 
 //		System.out.println(book2.getCod());
 //		
@@ -26,7 +30,7 @@ public class Main {
 //		
 //		System.out.println(student.toString());
 		
-		StudentRegister.render();
+//		StudentRegister.render();
 		
 	}
 
