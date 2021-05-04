@@ -12,6 +12,10 @@ public class Main {
 		do {
 			System.out.println("\nLIBRARY\n");
 			System.out.println("\n1 - Book Register");
+			System.out.println("2 - List Books");
+			System.out.println("3 - Find Book by Id");
+			System.out.println("4 - Book Edit");
+			System.out.println("5 - Book Delete");
 			System.out.println("2 - Student Register");
 			System.out.println("3 - Borrowing Register");
 			System.out.println("4 - Borrowing Controller");
@@ -33,6 +37,12 @@ public class Main {
 				case 4:
 					
 					break;
+				case 5:
+					
+					break;
+				case 6:
+					
+					break;
 				case 0:
 					System.out.println("Exit..");
 					break;
@@ -41,28 +51,6 @@ public class Main {
 	} while(opcao != 0);
 	
 	sc.close();		
-}
-			
-		
-//		Book book1 = new Book();
-//		System.out.println(book1.getCod());
-//		
-//		Book book2 = new Book(); 
-//		System.out.println(book2.getCod());
-//		
-//		Borrowing borrow = new Borrowing();
-//		
-//		System.out.println(borrow.getBorrowDate());
-//		System.out.println(borrow.getReturnDate());
-//		
-//		Student student = new Student();
-//		student.setName("Joe Doe");
-//		student.setCpf("123.456.789-10");
-//		student.setAddress("Rua Y, n 10, Bairro, Cidade/PR");
-//		
-//		System.out.println(student.toString());
-		
-//		StudentRegister.render();
-		
+}		
 }
 
