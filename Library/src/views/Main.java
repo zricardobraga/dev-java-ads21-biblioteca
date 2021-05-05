@@ -50,6 +50,9 @@ public class Main {
 				case 7:
 					ListStudent.render();
 					break;	
+				case 8:
+					FindStudentByCpf.render();
+					break;		
 				case 0:
 					System.out.println("Exit..");
 					break;

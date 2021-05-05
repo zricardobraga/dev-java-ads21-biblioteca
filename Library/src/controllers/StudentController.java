@@ -15,7 +15,7 @@ public class StudentController {
 			}
 		}
 		students.add(student);
-		return false;
+		return true;
 	}
 	
 	public static ArrayList<Student> list(){
