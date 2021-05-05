@@ -52,7 +52,13 @@ public class Main {
 					break;	
 				case 8:
 					FindStudentByCpf.render();
-					break;		
+					break;
+				case 9:
+					StudentEdit.render();
+					break;
+				case 10:
+					StudentDelete.render();
+					break;				
 				case 0:
 					System.out.println("Exit..");
 					break;
