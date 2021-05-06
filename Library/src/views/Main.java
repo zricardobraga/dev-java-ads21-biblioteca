@@ -50,10 +50,16 @@ public class Main {
 					break;
 				case 7:
 					ListStudent.render();
+					break;	
+				case 8:
+					FindStudentByCpf.render();
 					break;
-				case 15:
-					BorrowingRegister.render();
+				case 9:
+					StudentEdit.render();
 					break;
+				case 10:
+					StudentDelete.render();
+					break;				
 				case 0:
 					System.out.println("Exit..");
 					break;

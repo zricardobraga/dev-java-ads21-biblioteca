@@ -15,7 +15,7 @@ public class StudentController {
 			}
 		}
 		students.add(student);
-		return false;
+		return true;
 	}
 	
 	public static ArrayList<Student> list(){
@@ -30,4 +30,25 @@ public class StudentController {
 		}
 		return null;
 	} 
+	
+	public static boolean edit(String cpf, Student oldStudent, Student newStudent) {
+		for(Student registeredStudent: students) {
+			if(registeredStudent.getCpf().equals(cpf)) {
+				var index = students.indexOf(oldStudent);
+				students.set(index, newStudent);
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	public static boolean delete(String cpf, Student student) {
+		for(Student registeredStudent: students) {
+			if(registeredStudent.getCpf().equals(cpf)) {
+				students.remove(student);
+				return true;
+			}
+		}
+		return false;
+	}
 }
