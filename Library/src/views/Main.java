@@ -21,11 +21,12 @@ public class Main {
 			System.out.println("8 - Find Student by Cpf");
 			System.out.println("9 - Student Edit");
 			System.out.println("10 - Student Delete");
-			System.out.println("7 - Borrowing Register");
+			System.out.println("7 - List Borrowing");
 			System.out.println("8 - Borrowing Controller");
+			System.out.println("15 - Register Borrow");
 			System.out.println("0 - Exit");
 			
-			System.out.print("\nDigite uma op��o:");
+			System.out.print("\nDigite uma opcao:");
 			opcao = sc.nextInt();
 			
 			switch(opcao) {
@@ -49,7 +50,10 @@ public class Main {
 					break;
 				case 7:
 					ListStudent.render();
-					break;	
+					break;
+				case 15:
+					BorrowingRegister.render();
+					break;
 				case 0:
 					System.out.println("Exit..");
 					break;

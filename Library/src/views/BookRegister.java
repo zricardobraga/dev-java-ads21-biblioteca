@@ -1,7 +1,5 @@
 package views;
-
 import java.util.Scanner;
-
 import controllers.BookController;
 import models.Book;
 

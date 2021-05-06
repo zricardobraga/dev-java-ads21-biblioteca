@@ -1,13 +1,17 @@
 package models;
 
+import java.util.Date;
+
 public class Book {
 	private int cod;
 	private String tittle;
 	private String status;
 	private static int cont = 001;
+	private Date criadoEm;
 	
-	//contructo que gera o código do livro automáticamente
 	public Book () {
+		setCriadoEm(new Date());
+		//contructo que gera o código do livro automáticamente
 		this.cod = Book.cont++;
 		setStatus("AVAILABLE"); 
 	}
@@ -15,7 +19,6 @@ public class Book {
 	public int getCod() {
 		return cod;
 	}
-	
 	public void setCod(int cod) {
 		this.cod = cod;
 	}
@@ -23,7 +26,6 @@ public class Book {
 	public String getTittle() {
 		return tittle;
 	}
-	
 	public void setTittle(String tittle) {
 		this.tittle = tittle;
 	}
@@ -31,9 +33,15 @@ public class Book {
 	public String getStatus() {
 		return status;
 	}
-	
 	public void setStatus(String status) {
 		this.status = status;
+	}	
+	
+	public Date getCriadoEm() {
+		return criadoEm;
+	}
+	public void setCriadoEm(Date criadoEm) {
+		this.criadoEm = criadoEm;
 	}
 	
 	@Override
