@@ -1,5 +1,4 @@
 package models;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -18,7 +17,6 @@ public class Borrowing {
 	public Student getStudent() {
 		return student;
 	}
-
 	public void setStudent(Student student) {
 		this.student = student;
 	}
@@ -26,7 +24,6 @@ public class Borrowing {
 	public ArrayList<BorrowedBook> getBorrowedBook() {
 		return borrowedBook;
 	}
-
 	public void setBorrowedBook(ArrayList<BorrowedBook> borrowedBook) {
 		this.borrowedBook = borrowedBook;
 	}
@@ -38,7 +35,6 @@ public class Borrowing {
 	public LocalDate getReturnDate() {
 		return returnDate;
 	}
-
 	public void setReturnDate(LocalDate returnDate) {
 		this.returnDate = returnDate;
 	}

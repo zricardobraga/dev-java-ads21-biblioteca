@@ -25,7 +25,7 @@ public class Main {
 			System.out.println("12 - Borrowing List");
 			System.out.println("0 - Exit");
 			
-			System.out.print("\nEnter option: ");
+			System.out.print("\nDigite uma opcao:");
 			opcao = sc.nextInt();
 			
 			switch(opcao) {

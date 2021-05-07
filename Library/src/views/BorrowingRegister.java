@@ -1,4 +1,5 @@
 package views;
+import java.util.Scanner;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -45,6 +46,7 @@ public class BorrowingRegister {
 			    	 borrowedBook = new BorrowedBook();
 			    	 borrowedBook.setBook(book);
 			    	 books.add(borrowedBook);
+			    	 borrowedBook.getBook().setStatus("UNAVAILABLE");
 			    	 System.out.println("Book successfully added");
 			     }else {
 			    	 System.out.println("Book not found");

@@ -1,5 +1,7 @@
 package models;
 
+import java.util.Date;
+
 public class Book {
 	private String cod;
 	private String tittle;
@@ -7,7 +9,6 @@ public class Book {
 	private String status;
 	
 	
-	//contructo que gera o código do livro automáticamente
 	public Book () {
 		setStatus("AVAILABLE"); 
 	}
@@ -23,7 +24,6 @@ public class Book {
 	public String getTittle() {
 		return tittle;
 	}
-	
 	public void setTittle(String tittle) {
 		this.tittle = tittle;
 	}
@@ -31,11 +31,10 @@ public class Book {
 	public String getStatus() {
 		return status;
 	}
-	
 	public void setStatus(String status) {
 		this.status = status;
-	}
-	
+	}	
+		
 	public String getAuthor() {
 		return author;
 	}

@@ -1,7 +1,5 @@
 package controllers;
-
 import java.util.ArrayList;
-
 import models.Book;
 
 public class BookController {
@@ -28,7 +26,6 @@ public class BookController {
 				return registeredBook;
 			}
 		}
-		
 		return null;
 	}
 	
