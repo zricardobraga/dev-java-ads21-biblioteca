@@ -14,8 +14,12 @@ public class BookRegister {
 		book = new Book();
 		System.out.println("\n".repeat(10));
 		System.out.println("\n-- REGISTER BOOKS --  \n");				
+		System.out.println("Enter book cod: ");
+		book.setCod(sc.nextLine());
 		System.out.println("Enter book tittle: ");
-		book.setTittle(sc.next());
+		book.setTittle(sc.nextLine());
+		System.out.println("Enter book author: ");
+		book.setAuthor(sc.nextLine());
 		
 		if(BookController.register(book)) {
 			System.out.println("Book successfully registered!");

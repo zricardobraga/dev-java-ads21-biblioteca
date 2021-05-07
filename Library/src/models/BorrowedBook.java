@@ -11,4 +11,11 @@ public class BorrowedBook {
 	public void setBook(Book book) {
 		this.book = book;
 	}
+
+	@Override
+	public String toString() {
+		return "BorrowedBook [book=" + book + "]";
+	}
+	
+	
 }

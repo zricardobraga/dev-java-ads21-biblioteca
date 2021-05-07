@@ -21,8 +21,8 @@ public class Main {
 			System.out.println("8 - Find Student by Cpf");
 			System.out.println("9 - Student Edit");
 			System.out.println("10 - Student Delete");
-			System.out.println("7 - Borrowing Register");
-			System.out.println("8 - Borrowing Controller");
+			System.out.println("11 - Borrowing Register");
+			System.out.println("12 - Borrowing List");
 			System.out.println("0 - Exit");
 			
 			System.out.print("\nEnter option: ");
@@ -36,13 +36,13 @@ public class Main {
 					ListBooks.Render();					
 					break;
 				case 3:
-					
+					FindBooksByCod.render();
 					break;
 				case 4:
-					
+					EditBook.render();
 					break;
 				case 5:
-					
+					BookDelete.render();
 					break;
 				case 6:
 					StudentRegister.render();
@@ -59,6 +59,12 @@ public class Main {
 				case 10:
 					StudentDelete.render();
 					break;				
+				case 11:
+					BorrowingRegister.render();
+					break;
+				case 12:
+					ListBorrowing.render();
+					break;
 				case 0:
 					System.out.println("Exit..");
 					break;
@@ -67,6 +73,6 @@ public class Main {
 	} while(opcao != 0);
 	
 	sc.close();		
-}		
+	}		
 }
 

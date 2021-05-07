@@ -8,11 +8,11 @@ public class Borrowing {
 	
 	private Student student;
 	private ArrayList<BorrowedBook> borrowedBook;
-	private static LocalDate borrowDate = LocalDate.now();
+	private static LocalDate borrowingDate = LocalDate.now();
 	private LocalDate returnDate;
 	
 	public Borrowing () {
-		setReturnDate(borrowDate.plusDays(05));
+		setReturnDate(borrowingDate.plusDays(05));
 	}
 	
 	public Student getStudent() {
@@ -31,13 +31,9 @@ public class Borrowing {
 		this.borrowedBook = borrowedBook;
 	}
 
-	public LocalDate getBorrowDate() {
-		return borrowDate;
+	public LocalDate getBorrowingDate() {
+		return borrowingDate;
 	}
-
-	//public void setBorrowDate(LocalDate borrowDate) {
-	//	this.borrowDate = borrowDate;
-	//}
 
 	public LocalDate getReturnDate() {
 		return returnDate;
@@ -45,6 +41,11 @@ public class Borrowing {
 
 	public void setReturnDate(LocalDate returnDate) {
 		this.returnDate = returnDate;
+	}
+	
+	@Override
+	public String toString() {
+		return "\nStudent: " + getStudent().getName() + " | Borrowed Books: " + borrowedBook.toString() + " | Borrowing Date: " + getBorrowingDate() + " | Return Date: " + getReturnDate();
 	}
 
 }

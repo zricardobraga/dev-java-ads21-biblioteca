@@ -1,22 +1,22 @@
 package models;
 
 public class Book {
-	private int cod;
+	private String cod;
 	private String tittle;
+	private String author;
 	private String status;
-	private static int cont = 001;
+	
 	
 	//contructo que gera o código do livro automáticamente
 	public Book () {
-		this.cod = Book.cont++;
 		setStatus("AVAILABLE"); 
 	}
 	
-	public int getCod() {
+	public String getCod() {
 		return cod;
 	}
 	
-	public void setCod(int cod) {
+	public void setCod(String cod) {
 		this.cod = cod;
 	}
 	
@@ -36,8 +36,16 @@ public class Book {
 		this.status = status;
 	}
 	
+	public String getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
 	@Override
 	public String toString() {
-		return "\nCod: " + getCod() + " | Tittle: " + getTittle() + " | Status: " + getStatus();
+		return "\nCod: " + getCod() + " | Tittle: " + getTittle() + " | Author: " + getAuthor() + " | Status: " + getStatus();
 	}
 }
