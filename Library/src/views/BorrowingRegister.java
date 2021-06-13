@@ -18,7 +18,7 @@ public class BorrowingRegister {
 	private static Book book;
 	private static BorrowedBook borrowedBook;
 	private static ArrayList<BorrowedBook> books;
-	private static String studentCpf, bookCod, option;
+	private static String studentCpf, bookCod;
 	
 	private static Scanner sc = new Scanner(System.in);
 	
@@ -37,9 +37,11 @@ public class BorrowingRegister {
 		if(student != null) {
 			borrowing.setStudent(student);
 			
+			String option = "";
+			
 			do {
 				 System.out.println("\nEnter the code of the book you want: ");
-			     bookCod = (sc.nextLine());
+			     bookCod = (sc.next());
 			     book = BookController.seachBookByCode(bookCod);
 			     
 			     if(book != null) {
@@ -54,7 +56,8 @@ public class BorrowingRegister {
 			     
 			     borrowing.setBorrowedBook(books);
 			     BorrowingController.register(borrowing);
-			     System.out.println("Borrowing successfully registered");
+			     
+			     System.out.println("\nBorrowing successfully registered");
 			     
 			     System.out.println("Do you want to add another book?");
 			     option = sc.next();

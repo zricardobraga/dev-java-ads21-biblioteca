@@ -14,11 +14,11 @@ public class StudentRegister {
 		student = new Student();
 		System.out.println("\n -- REGISTER STUDENTS --");
 		System.out.println("\nEnter Student Name: ");
-		student.setName(sc.next());
+		student.setName(sc.nextLine());
+		System.out.println("\nEnter Student Address: ");
+		student.setAddress(sc.nextLine());
 		System.out.println("\nEnter Student CPF: ");
 		student.setCpf(sc.next());
-		System.out.println("\nEnter Student Address: ");
-		student.setAddress(sc.next());
 		
 		if(StudentController.register(student)) {
 			System.out.println("Student successfully registered!");

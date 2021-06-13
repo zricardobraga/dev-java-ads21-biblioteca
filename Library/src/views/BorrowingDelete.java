@@ -4,10 +4,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import controllers.BorrowingController;
-import controllers.StudentController;
 import models.Borrowing;
 
-public class ListBorrowingsByStudent {
+public class BorrowingDelete {
 	
 	private static Scanner sc = new Scanner(System.in);
 	private static ArrayList<Borrowing> borrowingByStudent;
@@ -20,10 +19,7 @@ public class ListBorrowingsByStudent {
 		System.out.println("\nEnter CPF Student: ");
 		cpfStudent = sc.next();
 		borrowingByStudent = BorrowingController.listStudentBorrowings(cpfStudent);
-		if(borrowingByStudent != null) {
-			System.out.println(borrowingByStudent);
-		}else {
-			System.out.println("Borrowings not found");
+		BorrowingController.delete(cpfStudent, borrowingByStudent);
+        System.out.println("Borrowing successfully deleted!");
 		}
 	}
-}

@@ -16,8 +16,7 @@ public class BorrowedBook {
 
 	@Override
 	public String toString() {
-		return "BorrowedBook [book=" + book + "]";
+		return "\nBorrowedBook: " + book;
 	}
-	
 	
 }

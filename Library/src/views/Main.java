@@ -23,6 +23,9 @@ public class Main {
 			System.out.println("10 - Student Delete");
 			System.out.println("11 - Borrowing Register");
 			System.out.println("12 - Borrowing List");
+			System.out.println("13 - List Borrowing By Student");
+			System.out.println("14 - Borrowing Edit");
+			System.out.println("15 - Borrowing Delete");
 			System.out.println("0 - Exit");
 			
 			System.out.print("\nDigite uma opcao:");
@@ -64,6 +67,15 @@ public class Main {
 					break;
 				case 12:
 					ListBorrowing.render();
+					break;
+				case 13:
+					ListBorrowingsByStudent.render();
+					break;
+				case 14:
+//					BorrowingEdit.render();
+					break;
+				case 15:
+					BorrowingDelete.render();
 					break;
 				case 0:
 					System.out.println("Exit..");
