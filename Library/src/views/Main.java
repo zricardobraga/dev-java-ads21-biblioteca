@@ -36,13 +36,13 @@ public class Main {
 					BookRegister.render();
 					break;	
 				case 2:
-					ListBooks.Render();					
+					BookList.Render();					
 					break;
 				case 3:
-					FindBooksByCod.render();
+					BookFindByCode.render();
 					break;
 				case 4:
-					EditBook.render();
+					BookEdit.render();
 					break;
 				case 5:
 					BookDelete.render();
