@@ -1,11 +1,10 @@
 package models;
 
-public class Book extends Exemplar{
+public class Book extends Item {
 
 	private String publisher;
-	private String author;
 	private String isbn;
-
+	
 	public Book(){
 		setType("1");
 	}
@@ -18,14 +17,6 @@ public class Book extends Exemplar{
 		this.publisher = publisher;
 	}
 		
-	public String getAuthor() {
-		return author;
-	}
-
-	public void setAuthor(String author) {
-		this.author = author;
-	}
-
 	public String getIsbn() {
 		return isbn;
 	}
@@ -34,8 +25,7 @@ public class Book extends Exemplar{
 		this.isbn = isbn;
 	}
 
-	@Override
 	public String toString() {
-		return "\nPublisher: " + getPublisher() + " | Author: " + getAuthor() + " | ISBN: " + getIsbn();
+		return super.toString() + "\nPublisher: " + getPublisher() + "\nISBN: " + getIsbn();
 	}
 }

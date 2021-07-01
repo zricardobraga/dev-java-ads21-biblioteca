@@ -2,7 +2,7 @@ package views;
 
 import java.util.Scanner;
 
-import controllers.ExemplarController;
+import controllers.ItemController;
 import models.ScientificArticle;
 
 public class ArticleFindByCode {
@@ -16,7 +16,7 @@ public class ArticleFindByCode {
 		System.out.println("\n-- SEARCH SCIENTIFIC ARTICLE BY CODE --\n");
 		System.out.println("\nEnter Scientific Article's Code: ");
 		cod = sc.nextLine();
-		article = ExemplarController.searchScientificArticleByCode(cod);
+		article = ItemController.searchScientificArticleByCode(cod);
 		if(article != null) {
 			System.out.println(article);
 		}else {

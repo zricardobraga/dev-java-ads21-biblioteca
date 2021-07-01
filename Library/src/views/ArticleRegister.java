@@ -1,6 +1,6 @@
 package views;
 import java.util.Scanner;
-import controllers.ExemplarController;
+import controllers.ItemController;
 import models.ScientificArticle;
 
 public class ArticleRegister {
@@ -21,7 +21,7 @@ public class ArticleRegister {
 		System.out.println("Enter the article Author: ");
 		article.setAuthor(sc.nextLine());
 		
-		if(ExemplarController.registerScientificArticle(article)) {
+		if(ItemController.registerScientificArticle(article)) {
 			System.out.println("Scientific Article successfully registered!");
 		}else {
 			System.out.println();

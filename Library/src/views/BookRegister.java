@@ -1,6 +1,6 @@
 package views;
 import java.util.Scanner;
-import controllers.ExemplarController;
+import controllers.ItemController;
 import models.Book;
 
 public class BookRegister {
@@ -25,7 +25,7 @@ public class BookRegister {
 		System.out.println("Enter the book ISBN: ");
 		book.setIsbn(sc.nextLine());
 		
-		if(ExemplarController.registerBook(book)) {
+		if(ItemController.registerBook(book)) {
 			System.out.println("Book successfully registered!");
 		}else {
 			System.out.println();

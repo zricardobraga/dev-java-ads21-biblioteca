@@ -2,7 +2,7 @@ package views;
 
 import java.util.Scanner;
 
-import controllers.ExemplarController;
+import controllers.ItemController;
 import models.Magazine;
 
 public class MagazineDelete {
@@ -15,13 +15,13 @@ public class MagazineDelete {
         System.out.println("\nEnter the magazine code: ");
         String cod = (sc.nextLine());
 
-        Magazine registeredMagazine = ExemplarController.searchMagazineByCode(cod);
+        Magazine registeredMagazine = ItemController.searchMagazineByCode(cod);
 
         if(registeredMagazine == null) {
             System.out.println("Magazine not found");
         }
 
-        ExemplarController.deleteMagazine(cod, registeredMagazine);
+        ItemController.deleteMagazine(cod, registeredMagazine);
         System.out.println("Magazine successfully deleted!");
     }
 }

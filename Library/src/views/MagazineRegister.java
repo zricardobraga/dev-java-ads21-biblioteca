@@ -1,6 +1,6 @@
 package views;
 import java.util.Scanner;
-import controllers.ExemplarController;
+import controllers.ItemController;
 import models.Magazine;
 
 public class MagazineRegister {
@@ -23,7 +23,7 @@ public class MagazineRegister {
 		System.out.println("Enter the magazine Publication: ");
 		magazine.setPublication(sc.nextLine());
 		
-		if(ExemplarController.registerMagazine(magazine)) {
+		if(ItemController.registerMagazine(magazine)) {
 			System.out.println("Magazine successfully registered!");
 		}else {
 			System.out.println();

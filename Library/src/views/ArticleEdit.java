@@ -2,7 +2,7 @@ package views;
 
 import java.util.Scanner;
 
-import controllers.ExemplarController;
+import controllers.ItemController;
 import models.ScientificArticle;
 
 public class ArticleEdit {
@@ -19,7 +19,7 @@ public class ArticleEdit {
         if(cod == null) {
             System.out.println("Scientific Article not found");
         } else {
-        	ScientificArticle oldArticle = ExemplarController.searchScientificArticleByCode(cod);
+        	ScientificArticle oldArticle = ItemController.searchScientificArticleByCode(cod);
             ScientificArticle newArticle = new ScientificArticle();
             
             System.out.println("\nEnter the new Code: ");
@@ -31,7 +31,7 @@ public class ArticleEdit {
             System.out.println("\nEnter the new Edition: ");
             newArticle.setEdition(sc.nextLine());
             
-            ExemplarController.editScientificArticle(cod, oldArticle, newArticle);
+            ItemController.editScientificArticle(cod, oldArticle, newArticle);
 
             System.out.println("\nScientific Article successfully edited!");
         }        

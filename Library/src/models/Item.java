@@ -1,14 +1,15 @@
 package models;
 
-public class Exemplar {
+public abstract class Item {
     
     private String cod;
 	private String title;
+	private String author;
     private String edition;
 	private String status;
     private String type;
 
-    public Exemplar () {
+    public Item(){
 		setStatus("AVAILABLE"); 
 	}
 
@@ -27,8 +28,16 @@ public class Exemplar {
 	public void setTitle(String title) {
 		this.title = title;
 	}
+	
+    public String getAuthor() {
+		return author;
+	}
 
-    public String getEdition() {
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	public String getEdition() {
 		return edition;
 	}
 
@@ -50,9 +59,8 @@ public class Exemplar {
 	public void setType(String type) {
 		this.type = type;
 	}
-    
-    @Override
+   
 	public String toString() {
-		return "\nCod: " + getCod() + " | Tittle: " + getTitle() + " | Edition: " + getEdition() + " | Status: " + getStatus() + " | Type: " + getType();
+		return "\nCod: " + getCod() + "\nTittle: " + getTitle() + "\nEdition: " + getEdition() + "\nStatus: " + getStatus() + "\nType: " + getType();
 	}
 }

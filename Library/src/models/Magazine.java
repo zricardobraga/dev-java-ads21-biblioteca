@@ -1,6 +1,6 @@
 package models;
 
-public class Magazine extends Exemplar{
+public class Magazine extends Item{
     
     private String publisher;
     private String publication;

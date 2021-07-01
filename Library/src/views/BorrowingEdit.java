@@ -2,7 +2,7 @@ package views;
 
 import java.util.Scanner;
 
-import controllers.BookController;
+import controllers.ItemController;
 import controllers.BorrowingController;
 import models.Book;
 import models.Borrowing;

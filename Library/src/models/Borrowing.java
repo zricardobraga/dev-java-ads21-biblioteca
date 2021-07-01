@@ -7,6 +7,8 @@ public class Borrowing {
 	
 	private Student student;
 	private ArrayList<BorrowedBook> borrowedBook;
+	private ArrayList<BorrowedMagazine> borrowedMagazine;
+	private ArrayList<BorrowedScientificArticle> borrowedScientificArticle;
 	private static LocalDate borrowingDate = LocalDate.now();
 	private LocalDate returnDate;
 	
@@ -27,6 +29,22 @@ public class Borrowing {
 	public void setBorrowedBook(ArrayList<BorrowedBook> borrowedBook) {
 		this.borrowedBook = borrowedBook;
 	}
+	
+	public ArrayList<BorrowedMagazine> getBorrowedMagazine() {
+		return borrowedMagazine;
+	}
+
+	public void setBorrowedMagazine(ArrayList<BorrowedMagazine> borrowedMagazine) {
+		this.borrowedMagazine = borrowedMagazine;
+	}
+
+	public ArrayList<BorrowedScientificArticle> getBorrowedScientificArticle() {
+		return borrowedScientificArticle;
+	}
+
+	public void setBorrowedScientificArticle(ArrayList<BorrowedScientificArticle> borrowedScientificArticle) {
+		this.borrowedScientificArticle = borrowedScientificArticle;
+	}
 
 	public LocalDate getBorrowingDate() {
 		return borrowingDate;
@@ -41,7 +59,12 @@ public class Borrowing {
 	
 	@Override
 	public String toString() {
-		return "\nStudent: " + getStudent().getName() + " | Borrowed Books: " + borrowedBook.toString() + " | Borrowing Date: " + getBorrowingDate() + " | Return Date: " + getReturnDate();
+		return "\nStudent: " + getStudent().getName() + 
+				"\nBorrowed Books: " + borrowedBook.toString() +
+				"\nBorrowed Magazines: " + borrowedMagazine.toString() +
+				"\nBorrowed Scientific Articles: " + borrowedScientificArticle.toString() +
+				"\nBorrowing Date: " + getBorrowingDate() + 
+				"\nReturn Date: " + getReturnDate();
 	}
 
 }

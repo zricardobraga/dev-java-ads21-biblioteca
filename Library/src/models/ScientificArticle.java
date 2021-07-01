@@ -1,23 +1,23 @@
 package models;
 
-public class ScientificArticle extends Exemplar{
+public class ScientificArticle extends Item{
     
-    private String author;
+    private String theme;
 
 	public ScientificArticle(){
 		setType("3");
 	}
 	
-    public String getAuthor() {
-		return author;
+    public String getTheme() {
+		return theme;
 	}
     
-	public void setAuthor(String author) {
-		this.author = author;
+	public void setTheme(String theme) {
+		this.theme = theme;
 	}
     
     @Override
 	public String toString() {
-		return "\nAuthor: " + getAuthor();
+		return "\nTheme: " + getTheme();
 	}
 }

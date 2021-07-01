@@ -4,7 +4,7 @@ import models.Book;
 import models.Magazine;
 import models.ScientificArticle;
 
-public class ExemplarController {
+public class ItemController {
 	
 	private static ArrayList<Book> books = new ArrayList<Book>();
 	private static ArrayList<Magazine> magazines = new ArrayList<Magazine>();

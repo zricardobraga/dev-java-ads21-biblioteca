@@ -2,7 +2,7 @@ package views;
 
 import java.util.Scanner;
 
-import controllers.ExemplarController;
+import controllers.ItemController;
 import models.ScientificArticle;
 
 public class ArticleDelete {
@@ -15,13 +15,13 @@ public class ArticleDelete {
         System.out.println("\nEnter the Article Code: ");
         String cod = (sc.nextLine());
 
-        ScientificArticle registeredArticle = ExemplarController.searchScientificArticleByCode(cod);
+        ScientificArticle registeredArticle = ItemController.searchScientificArticleByCode(cod);
 
         if(registeredArticle == null) {
             System.out.println("Scientific Article not found");
         }
 
-        ExemplarController.deleteScientificArticle(cod, registeredArticle);
+        ItemController.deleteScientificArticle(cod, registeredArticle);
         System.out.println("Scientific Article successfully deleted!");
     }
 }

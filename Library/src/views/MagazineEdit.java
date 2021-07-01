@@ -2,7 +2,7 @@ package views;
 
 import java.util.Scanner;
 
-import controllers.ExemplarController;
+import controllers.ItemController;
 import models.Magazine;
 
 public class MagazineEdit {
@@ -19,7 +19,7 @@ public class MagazineEdit {
         if(cod == null) {
             System.out.println("Magazine not found");
         } else {
-        	Magazine oldMagazine = ExemplarController.searchMagazineByCode(cod);
+        	Magazine oldMagazine = ItemController.searchMagazineByCode(cod);
             Magazine newMagazine = new Magazine();
             
             System.out.println("\nEnter the new Code: ");
@@ -34,7 +34,7 @@ public class MagazineEdit {
             newMagazine.setPublication(sc.nextLine());
 
             
-            ExemplarController.editMagazine(cod, oldMagazine, newMagazine);
+            ItemController.editMagazine(cod, oldMagazine, newMagazine);
 
             System.out.println("\nMagazine successfully edited!");
         }        

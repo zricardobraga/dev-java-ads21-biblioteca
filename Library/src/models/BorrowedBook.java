@@ -1,10 +1,7 @@
 package models;
 
 public class BorrowedBook {
-	
-	public BorrowedBook() {
-	}
-	
+		
 	private Book book;
 
 	public Book getBook() {
@@ -16,7 +13,7 @@ public class BorrowedBook {
 
 	@Override
 	public String toString() {
-		return "\nBorrowedBook: " + book;
+		return "\nBorrowed Book: " + book;
 	}
 	
 }
