@@ -2,49 +2,39 @@ package models;
 
 import java.util.Date;
 
-public class Book {
-	private String cod;
-	private String tittle;
-	private String author;
-	private String status;
+public class Book extends Exemplar {
+	
+	private String editora;
+	private String autor;
+	private String isbn;
 	
 	
-	public Book () {
-		setStatus("AVAILABLE"); 
+	public String getEditora() {
+		return editora;
+	}
+	public void setEditora(String editora) {
+		this.editora = editora;
+	}
+	public String getAutor() {
+		return autor;
+	}
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+	public String getIsbn() {
+		return isbn;
+	}
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
 	}
 	
-	public String getCod() {
-		return cod;
-	}
 	
-	public void setCod(String cod) {
-		this.cod = cod;
-	}
-	
-	public String getTittle() {
-		return tittle;
-	}
-	public void setTittle(String tittle) {
-		this.tittle = tittle;
-	}
-	
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
-	}	
-		
-	public String getAuthor() {
-		return author;
-	}
-
-	public void setAuthor(String author) {
-		this.author = author;
-	}
-
 	@Override
 	public String toString() {
-		return "\nCod: " + getCod() + " | Tittle: " + getTittle() + " | Author: " + getAuthor() + " | Status: " + getStatus();
+		return super.toString() + "Book \nEditora: " + getEditora() + "\nAutor: " + getAutor() + "\nISBN: " + getIsbn();
 	}
+	
+	
+	
+	
 }
