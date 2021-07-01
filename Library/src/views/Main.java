@@ -2,6 +2,9 @@ package views;
 
 import java.util.Scanner;
 
+import models.Console;
+
+
 public class Main {
 	
 	public static void main(String[] args) {
@@ -61,31 +64,31 @@ public class Main {
 					MagazineRegister.render();
 					break;	
 				case 7:
-					ListMagazines.Render();					
+					ListMagazines.render();					
 					break;
 				case 8:
 					FindMagazinesByCod.render();
 					break;
 				case 9:
-					EditMagazine.render();
+					//EditMagazine.render();
 					break;
 				case 10:
-					MagazineDelete.render();
+					//MagazineDelete.render();
 					break;
 				case 11:
-					ArticleRegister.render();
+					//ArticleRegister.render();
 					break;	
 				case 12:
-					ListArticles.Render();					
+					//ListArticles.Render();					
 					break;
 				case 13:
-					FindArticlesByCod.render();
+					//FindArticlesByCod.render();
 					break;
 				case 14:
-					EditArticle.render();
+					//EditArticle.render();
 					break;
 				case 15:
-					ArticleDelete.render();
+					//ArticleDelete.render();
 					break;	
 				case 16:
 					StudentRegister.render();

@@ -1,8 +1,7 @@
 package views;
 
 import java.util.Scanner;
-
-import controllers.BookController;
+import controllers.ExemplarController;
 import models.Book;
 
 public class FindBooksByCod {
@@ -16,7 +15,7 @@ public class FindBooksByCod {
 		System.out.println("\n-- SEARCH BOOK BY CODE --\n");
 		System.out.println("\nEnter Book Cod: ");
 		cod = sc.nextLine();
-		book = BookController.seachBookByCode(cod);
+		book = ExemplarController.seachBookByCode(cod);
 		if(book != null) {
 			System.out.println(book);
 		}else {

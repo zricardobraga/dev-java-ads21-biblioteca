@@ -1,8 +1,7 @@
 package views;
 
 import java.util.Scanner;
-
-import controllers.BookController;
+import controllers.ExemplarController;
 import models.Book;
 
 public class BookDelete {
@@ -15,13 +14,13 @@ public class BookDelete {
         System.out.println("\nEnter the book code: ");
         String cod = (sc.nextLine());
 
-        Book registeredBook = BookController.seachBookByCode(cod);
+        Book registeredBook = ExemplarController.seachBookByCode(cod);
 
         if(registeredBook == null) {
             System.out.println("Book not found");
         }
 
-        BookController.delete(cod, registeredBook);
+        ExemplarController.delete(cod, registeredBook);
         System.out.println("Book successfully deleted!");
 
     }

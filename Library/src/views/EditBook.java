@@ -2,7 +2,7 @@ package views;
 
 import java.util.Scanner;
 
-import controllers.BookController;
+import controllers.ExemplarController;
 import models.Book;
 
 public class EditBook {
@@ -19,17 +19,17 @@ public class EditBook {
         if(cod == null) {
             System.out.println("Book not found");
         } else {
-        	Book oldBook = BookController.seachBookByCode(cod);
+        	Book oldBook = ExemplarController.seachBookByCode(cod);
             Book newBook = new Book();
             
-            System.out.println("\nDigite o novo código: ");
+            System.out.println("\nDigite o novo cï¿½digo: ");
             newBook.setCod(sc.nextLine());
-            System.out.println("\nDigite o novo título: ");
-            newBook.setTittle(sc.nextLine());
+            System.out.println("\nDigite o novo tï¿½tulo: ");
+            newBook.setTitulo(sc.nextLine());
             System.out.println("\nDigite o novo Autor: ");
-            newBook.setAuthor(sc.nextLine());
+            newBook.setAutor(sc.nextLine());
             
-            BookController.edit(cod, oldBook, newBook);
+            ExemplarController.edit(cod, oldBook, newBook);
 
             System.out.println("\nLivro editado!");
         }        
