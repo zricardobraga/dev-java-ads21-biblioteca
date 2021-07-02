@@ -5,15 +5,25 @@ import java.util.ArrayList;
 
 public class Borrowing {
 	
+	private Integer id;
 	private Student student;
 	private ArrayList<BorrowedBook> borrowedBook;
 	private ArrayList<BorrowedMagazine> borrowedMagazine;
 	private ArrayList<BorrowedScientificArticle> borrowedScientificArticle;
 	private static LocalDate borrowingDate = LocalDate.now();
 	private LocalDate returnDate;
+	private static int counter = 0;
 	
 	public Borrowing () {
 		setReturnDate(borrowingDate.plusDays(05));
+		this.id = counter++;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
 	}
 	
 	public Student getStudent() {
@@ -59,7 +69,8 @@ public class Borrowing {
 	
 	@Override
 	public String toString() {
-		return "\nStudent: " + getStudent().getName() + 
+		return "\nId: " + getId() + 
+				"\nStudent: " + getStudent().getName() + 
 				"\nBorrowed Books: " + borrowedBook.toString() +
 				"\nBorrowed Magazines: " + borrowedMagazine.toString() +
 				"\nBorrowed Scientific Articles: " + borrowedScientificArticle.toString() +

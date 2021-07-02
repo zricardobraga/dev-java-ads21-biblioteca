@@ -1,13 +1,6 @@
 package controllers;
 import java.util.ArrayList;
 import models.Borrowing;
-import models.Book;
-import models.BorrowedBook;
-import models.Student;
-
-import java.util.ArrayList;
-
-import models.Borrowing;
 
 public class BorrowingController {
 	private static ArrayList<Borrowing> borrowings = new ArrayList<Borrowing>();
@@ -21,15 +14,13 @@ public class BorrowingController {
 		return borrowings;
 	}
 	
-	public static ArrayList<Borrowing> listStudentBorrowings (String cpf) {
-		ArrayList<Borrowing> studentBorrowings = new ArrayList<Borrowing>();
-		for(Borrowing registeredBorrowing: borrowings) {
-			if(registeredBorrowing.getStudent().getCpf().equals(cpf)) {
-				studentBorrowings.add(registeredBorrowing);
+	public static Borrowing searchBorrowingById(int id) {
+		for(Borrowing registeredBorrow: borrowings) {
+			if(registeredBorrow.getId().equals(id)) {
+				return registeredBorrow;
 			}
 		}
-		return studentBorrowings;
-
+		return null;
 	}
 	
 	public static boolean edit(String cpf, Borrowing oldBorrow, Borrowing newBorrow) {
@@ -43,13 +34,15 @@ public class BorrowingController {
         return false;
     }
 	
-	public static boolean delete(String studentCpf, ArrayList<Borrowing> borrowingByStudent) {
-        for(Borrowing registeredBorrowing:borrowings) {
-            if(registeredBorrowing.getStudent().getCpf().equals(studentCpf)) {
-                borrowings.remove(borrowingByStudent);
-                return true;
-            }
-        }
-        return false;
-    }
+	public static boolean delete(int id, Borrowing borrow)
+	{
+		for(Borrowing registeredBorrow: borrowings){
+			if(registeredBorrow.getId() == id){
+				borrowings.remove(borrow);
+				return true;
+			}
+		}
+
+		return false;
+	}
 }	

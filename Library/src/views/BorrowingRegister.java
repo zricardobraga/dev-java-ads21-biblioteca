@@ -125,7 +125,7 @@ public class BorrowingRegister {
 					} while (option.toUpperCase().equals("S"));
 				} 
 				
-			     System.out.println("Do you want to add another item?");
+			     System.out.println("Do you want to add another item? S ou N ");
 			     option = sc.next();
 			} while (option.toUpperCase().equals("S"));
 			BorrowingController.register(borrowing);

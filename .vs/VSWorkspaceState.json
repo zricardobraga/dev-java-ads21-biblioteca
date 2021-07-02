@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Library",
-    "\\Library\\src",
-    "\\Library\\src\\views"
+    "\\Library"
   ],
-  "SelectedNode": "\\Library\\src\\views\\Main.java",
+  "SelectedNode": "\\Library\\src",
   "PreviewInSolutionExplorer": false
 }

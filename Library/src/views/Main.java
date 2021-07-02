@@ -13,7 +13,7 @@ public class Main {
 			System.out.println("\nLIBRARY\n");
 			System.out.println("1 - Book Register");
 			System.out.println("2 - List Books");
-			System.out.println("3 - Find Book by Id");
+			System.out.println("3 - Find Book by Code");
 			System.out.println("4 - Book Edit");
 			System.out.println("5 - Book Delete");
 			System.out.println("6 - Student Register");
@@ -69,13 +69,13 @@ public class Main {
 					ListBorrowing.render();
 					break;
 				case 13:
-					ListBorrowingsByStudent.render();
+					// ListBorrowingsByStudent.render();
 					break;
 				case 14:
 //					BorrowingEdit.render();
 					break;
 				case 15:
-					BorrowingDelete.render();
+					// BorrowingDelete.render();
 					break;
 				case 0:
 					System.out.println("Exit..");
