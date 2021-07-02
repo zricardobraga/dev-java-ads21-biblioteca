@@ -5,7 +5,7 @@ import java.util.Scanner;
 import controllers.ItemController;
 import models.ScientificArticle;
 
-public class ArticleDelete {
+public class ScientificArticleDelete {
 	private static Scanner sc = new Scanner(System.in);
 
     public static void render() {

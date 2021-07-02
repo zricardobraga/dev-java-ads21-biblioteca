@@ -6,7 +6,7 @@ public class Book extends Item {
 	private String isbn;
 	
 	public Book(){
-		setType("1");
+		setType(1);
 	}
 
 	public String getPublisher() {

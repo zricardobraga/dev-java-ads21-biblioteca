@@ -5,7 +5,7 @@ public class ScientificArticle extends Item{
     private String theme;
 
 	public ScientificArticle(){
-		setType("3");
+		setType(3);
 	}
 	
     public String getTheme() {
@@ -18,6 +18,6 @@ public class ScientificArticle extends Item{
     
     @Override
 	public String toString() {
-		return "\nTheme: " + getTheme();
+		return "\nTheme: " + getTheme() + super.toString();
 	}
 }

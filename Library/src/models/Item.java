@@ -7,7 +7,7 @@ public abstract class Item {
 	private String author;
     private String edition;
 	private String status;
-    private String type;
+    private int type;
 
     public Item(){
 		setStatus("AVAILABLE"); 
@@ -52,15 +52,15 @@ public abstract class Item {
 		this.status = status;
 	}	
 
-    public String getType() {
+    public int getType() {
 		return type;
 	}
     
-	public void setType(String type) {
+	public void setType(int type) {
 		this.type = type;
 	}
    
 	public String toString() {
-		return "\nCod: " + getCod() + "\nTittle: " + getTitle() + "\nEdition: " + getEdition() + "\nStatus: " + getStatus() + "\nType: " + getType();
+		return "\nCod: " + getCod() + "\nTittle: " + getTitle() + "\nAuthor: " + getAuthor() + "\nEdition: " + getEdition() + "\nStatus: " + getStatus() + "\nType: " + getType();
 	}
 }

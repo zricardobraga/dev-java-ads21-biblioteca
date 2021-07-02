@@ -3,9 +3,9 @@ package views;
 import controllers.ItemController;
 import models.ScientificArticle;
 
-public class ArticleList {
+public class ScientificArticleList {
 
-	public static void Render() {
+	public static void render() {
 		System.out.println("\n -- SCIENTIFIC ARTICLES --\n");
 		
 		for(ScientificArticle registeredArticle: ItemController.showScientificArticles()) {

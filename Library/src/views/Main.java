@@ -13,19 +13,28 @@ public class Main {
 			System.out.println("\nLIBRARY\n");
 			System.out.println("1 - Book Register");
 			System.out.println("2 - List Books");
-			System.out.println("3 - Find Book by Id");
+			System.out.println("3 - Find Book by Code");
 			System.out.println("4 - Book Edit");
 			System.out.println("5 - Book Delete");
-			System.out.println("6 - Student Register");
-			System.out.println("7 - List Student");
-			System.out.println("8 - Find Student by Cpf");
-			System.out.println("9 - Student Edit");
-			System.out.println("10 - Student Delete");
-			System.out.println("11 - Borrowing Register");
-			System.out.println("12 - Borrowing List");
-			System.out.println("13 - List Borrowing By Student");
-			System.out.println("14 - Borrowing Edit");
-			System.out.println("15 - Borrowing Delete");
+			System.out.println("6 - Magazine Register");
+			System.out.println("7 - List Magazines");
+			System.out.println("8 - Find Magazine by Code");
+			System.out.println("9 - Magazine Edit");
+			System.out.println("10 - Magazine Delete");
+			System.out.println("11 - Scientific Article Register");
+			System.out.println("12 - List Scientific Articles");
+			System.out.println("13 - Find Scientific Article by Code");
+			System.out.println("14 - Scientific Article Edit");
+			System.out.println("15 - Scientific Article Delete");
+			System.out.println("16 - Student Register");
+			System.out.println("17 - List Student");
+			System.out.println("18 - Find Student by Cpf");
+			System.out.println("19 - Student Edit");
+			System.out.println("20 - Student Delete");
+			System.out.println("21 - Borrowing Register");
+			System.out.println("22 - Borrowing List");
+			System.out.println("23 - Borrowing Delete");
+			System.out.println("24 - Borrowing Devolution");
 			System.out.println("0 - Exit");
 			
 			System.out.print("\nDigite uma opcao:");
@@ -48,34 +57,61 @@ public class Main {
 					BookDelete.render();
 					break;
 				case 6:
-					StudentRegister.render();
+					MagazineRegister.render();
 					break;
 				case 7:
-					ListStudent.render();
+					MagazineList.render();
 					break;	
 				case 8:
-					FindStudentByCpf.render();
+					MagazineFindByCode.render();
 					break;
 				case 9:
-					StudentEdit.render();
+					MagazineEdit.render();
 					break;
 				case 10:
-					StudentDelete.render();
+					MagazineDelete.render();
 					break;				
 				case 11:
-					BorrowingRegister.render();
+					ScientificArticleRegister.render();
 					break;
 				case 12:
-					ListBorrowing.render();
+					ScientificArticleList.render();
 					break;
 				case 13:
-					ListBorrowingsByStudent.render();
+					ScientificArticleFindByCode.render();
 					break;
 				case 14:
-//					BorrowingEdit.render();
+					ScientificArticleEdit.render();
 					break;
 				case 15:
+					ScientificArticleDelete.render();
+					break;
+				case 16:
+					StudentRegister.render();
+					break;
+				case 17:
+					ListStudent.render();
+					break;
+				case 18:
+					FindStudentByCpf.render();
+					break;
+				case 19:
+					StudentEdit.render();
+					break;
+				case 20:
+					StudentDelete.render();
+					break;
+				case 21:
+					BorrowingRegister.render();
+					break;
+				case 22:
+					ListBorrowing.render();
+					break;
+				case 23:
 					BorrowingDelete.render();
+					break;
+				case 24:
+//					BorrowingDevolution.render();
 					break;
 				case 0:
 					System.out.println("Exit..");

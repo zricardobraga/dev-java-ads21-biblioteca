@@ -5,7 +5,7 @@ import models.Magazine;
 
 public class MagazineList {
 
-	public static void Render() {
+	public static void render() {
 		System.out.println("\n -- MAGAZINES --\n");
 		
 		for(Magazine registeredMagazine: ItemController.showMagazines()) {

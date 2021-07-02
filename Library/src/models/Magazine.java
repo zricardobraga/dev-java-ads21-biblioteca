@@ -6,7 +6,7 @@ public class Magazine extends Item{
     private String publication;
 
 	public Magazine(){
-		setType("2");
+		setType(2);
 	}
 
     public String getPublisher() {

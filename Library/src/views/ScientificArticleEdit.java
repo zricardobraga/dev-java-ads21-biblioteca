@@ -5,7 +5,7 @@ import java.util.Scanner;
 import controllers.ItemController;
 import models.ScientificArticle;
 
-public class ArticleEdit {
+public class ScientificArticleEdit {
 	
 	private static Scanner sc = new Scanner(System.in);
 

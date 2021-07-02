@@ -3,7 +3,7 @@ import java.util.Scanner;
 import controllers.ItemController;
 import models.ScientificArticle;
 
-public class ArticleRegister {
+public class ScientificArticleRegister {
 	
 	private static ScientificArticle article;
 	private static Scanner sc = new Scanner(System.in);
